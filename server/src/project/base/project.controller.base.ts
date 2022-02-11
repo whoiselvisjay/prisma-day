@@ -29,7 +29,7 @@ import { ProjectUpdateInput } from "./ProjectUpdateInput";
 import { Project } from "./Project";
 import { TaskFindManyArgs } from "../../task/base/TaskFindManyArgs";
 import { Task } from "../../task/base/Task";
-@swagger.ApiBearerAuth()
+@swagger.ApiBasicAuth()
 export class ProjectControllerBase {
   constructor(
     protected readonly service: ProjectService,

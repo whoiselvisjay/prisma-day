@@ -31,7 +31,7 @@ import { ProjectFindManyArgs } from "../../project/base/ProjectFindManyArgs";
 import { Project } from "../../project/base/Project";
 import { TaskFindManyArgs } from "../../task/base/TaskFindManyArgs";
 import { Task } from "../../task/base/Task";
-@swagger.ApiBearerAuth()
+@swagger.ApiBasicAuth()
 export class UserControllerBase {
   constructor(
     protected readonly service: UserService,

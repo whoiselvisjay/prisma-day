@@ -27,7 +27,7 @@ import { TaskWhereUniqueInput } from "./TaskWhereUniqueInput";
 import { TaskFindManyArgs } from "./TaskFindManyArgs";
 import { TaskUpdateInput } from "./TaskUpdateInput";
 import { Task } from "./Task";
-@swagger.ApiBearerAuth()
+@swagger.ApiBasicAuth()
 export class TaskControllerBase {
   constructor(
     protected readonly service: TaskService,
